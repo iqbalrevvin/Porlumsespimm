@@ -1,0 +1,20 @@
+<ifModule mod_rewrite.c>
+ErrorDocument 404 http://rootdoc/error.html
+ErrorDocument 500 http://rootdoc/error.html
+RewriteEngine on 
+
+
+
+RewriteRule ^App$ index2.php [L]
+RewriteRule ^Search$ index2.php?p=Search [L]
+RewriteRule ^Webpage$ index2.php?p=Webpage [L]
+RewriteRule ^WebpagePolri$ index2.php?p=WebpagePolri [L]
+RewriteRule ^ManageAlumni$ index2.php?p=ManageAlumni [L]
+RewriteRule ^ImportData$ index2.php?p=ImportData [L]
+RewriteRule ^BackupRestoreDatabase$ index2.php?p=BackupRestoreDatabase [L]
+
+
+
+
+Options All -Indexes
+</ifModule>
